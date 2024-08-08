@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/wartegxyz.png">
+    <title>Warteg XYZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/wartegxyz.png" alt="" class="logo">
+        <p class="jlogo">Warteg XYZ <br> <span class="desc">Enak, Mantap, Lezat & Kenyang</span></p>
+            <nav>
+            <ul>
+            <li><a href="#container">Home</a>
+                <div class="dropdown-content">
+                    <a href="#ordertable">Order Table</a>
+                    </div>
+            </li>
+            <li><a href="#daftarmakanan">Menu</a>
+                <div class="dropdown-content">
+                    <a href="#daftarmakanan">Daftar Makanan</a>
+                    </div>
+            </li>
+            <li><a href="#about">About Us</a>
+                <div class="dropdown-content">
+                    <a href="#about">Team Manajemen</a>
+                    <a href="#sejarah">Informasi Kami</a>
+                    </div>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+    <div id="container">
+        <div class="title">
+        <div class="judul"><h2>Selamat Datang di "Warteg XYZ"</h2></div>
+        <div class="subjudul"><p>Kami melayani makanan siap saji dengan beragam aneka makanan yang tersedia di warteg kami!<br> Ayo segera pesan makanan favorit anda.</p></div>
+            </div>
+
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img/slide1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/slide2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/slide3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/slide4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="img/slide5.jpg" alt=""></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    </div>
+    <div class="btn">
+        <a href="#ordertable" class="pesanmeja">Pesan Meja Anda</a>
+        <a href="#daftarmakanan" class="cekmenu">Cek Daftar Menu</a>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay:{
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+    </script>
+    <div id="ordertable">
+        <div class="judul"><h2>Pesan Meja Anda</h2></div>
+        <div class="imgmeja">
+            <img src="img/meja.jpg" alt="">
+        </div>
+        <div class="pemesanan">
+            <h4>Detail Order</h4>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Nomor Telephone</td>
+                    <td>:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>No Meja</td>
+                    <td>:</td>
+                    <td><select name="" id=""><option value="">Select No Meja</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></td>
+                </tr>
+                <tr>
+                    <td>Jumlah Orang</td>
+                    <td>:</td>
+                    <td><input type="number"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Pesan</td>
+                    <td>:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr class="pesen">
+                    <td><a href="#">Pesan Meja</a></td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="peoplebuy">
+            <img src="img/shop.png" alt="">
+        </div>
+    </div>
+
+    <div id="daftarmakanan">
+
+        <div class="judul"><h2>Daftar Menu</h2></div>
+        <div class="pencarian">
+            <input type="text" placeholder="Cari Menu Makanan">
+            <button>Search</button>
+        </div>
+        <div class="submenu"><h1>Aneka Makanan</h1></div>
+        <div class="menu1">
+            <div class="makanan1">
+                <img src="img/perkedel.jpg" alt="">
+                <h3 class="mainjudul">Perkedel</h3>
+                <!-- <h5 class="deskripsi">Terbuat dari kentang yang dihancurkan dan digoreng menggunakan telur, perkedel</h5> -->
+                <h4 class="harga">Rp.2.000/Porsi</h4>
+            </div>
+            <div class="makanan2">
+                <img src="img/aym.jpg" alt="">
+                <h3 class="mainjudul">Ayam Goreng</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.10.000/Porsi</h4>
+            </div>
+            <div class="makanan3">
+                <img src="img/tlsddr.jpg" alt="">
+                <h3 class="mainjudul">Telor Dadar</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.5.000/Porsi</h4>
+            </div>
+            <div class="makanan4">
+                <img src="img/tmpe.jpg" alt="">
+                <h3 class="mainjudul">Tempe</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.3.000/Porsi</h4>
+            </div>
+            <div class="makanan5">
+                <img src="img/ikan.jpg" alt="">
+                <h3 class="mainjudul">Ikan</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.11.000/Porsi</h4>
+            </div>
+        </div>
+        <div class="menu2">
+            <div class="makanan1">
+                <img src="img/sop.jpg" alt="">
+                <h3 class="mainjudul">Sayur Sop</h3>
+                <!-- <h5 class="deskripsi">Terbuat dari kentang yang dihancurkan dan digoreng menggunakan telur, perkedel</h5> -->
+                <h4 class="harga">Rp.5.000/Porsi</h4>
+            </div>
+            <div class="makanan2">
+                <img src="img/tumis.jpg" alt="">
+                <h3 class="mainjudul">Tumisan</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.5.000/Porsi</h4>
+            </div>
+            <div class="makanan3">
+                <img src="img/terong.jpg" alt="">
+                <h3 class="mainjudul">Terong</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.5.000/Porsi</h4>
+            </div>
+            <div class="makanan4">
+                <img src="img/tempe orek.jpg" alt="">
+                <h3 class="mainjudul">Tempe Orek</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.3.000/Porsi</h4>
+            </div>
+            <div class="makanan5">
+                <img src="img/tongkol.jpg" alt="">
+                <h3 class="mainjudul">Tongkol</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.10.000/Porsi</h4>
+            </div>
+        </div>
+        <div class="submenu"><h1>Aneka Minuman</h1></div>
+        <div class="menu1">
+            <div class="makanan1">
+                <img src="img/ksusu.jpg" alt="">
+                <h3 class="mainjudul">Kopi Susu</h3>
+                <h4 class="harga">Rp.4.000/Cangkir</h4>
+                
+            </div>
+            <div class="makanan2">
+                <img src="img/esteh.jpg" alt="">
+                <h3 class="mainjudul">Es Teh</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.4.000/Cangkir</h4>
+            </div>
+            <div class="makanan3">
+                <img src="img/kopi.jpg" alt="">
+                <h3 class="mainjudul">Kopi</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.5.000/Porsi</h4>
+            </div>
+            <div class="makanan4">
+                <img src="img/susu.jpg" alt="">
+                <h3 class="mainjudul">Susu</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.4.000/Cangkir</h4>
+            </div>
+            <div class="makanan5">
+                <img src="img/sachet.jpg" alt="">
+                <h3 class="mainjudul">Minuman Sachet</h3>
+                <h5 class="deskripsi"></h5>
+                <h4 class="harga">Rp.6.000/Cangkir</h4>
+            </div>
+        </div>
+    </div>
+<section id="about">
+    <div class="judul"><h2>About Us</h2></div>
+        <div class="about-img">
+            <img src="img/profile1.jpeg" alt="">
+            <div class="about-text">
+                <span>Anggriawan Sifa</span>
+                <h2>Pemilik Warteg XYZ</h2>
+                <p>Saya Anggriawan Sifa Wahyusesa pendiri dari warteg XYZ ini dengan niat dan sengaja warteg ini saya bangun dengan segala bentuk konsep bertema masakini dan modern, sehingga membuat warteg ini memiliki daya tarik tersendiri. dengan kerjasama yang baik saya sebagai ketua pendiri warteg ini, dan rekan saya sebagai juru resep masakan yang ter dahsyat, lalu rekan satu lagi sebagai marketing terbaik di bidangnya. Mohon maaf sebanyak-banyaknya apabila terdapat sedikit ketidak nyamanan pelanggan terhadap warteg ini, untuk ketidaknyamanan nya saya minta untuk segera melaporkan kepada pihak dari warteg XYZ ini.</p>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="img/profile2.jpg" alt="">
+            <div class="about-text">
+                <span>Saskia Pratidina</span>
+                <h2>Juru Resep Masakan</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi reiciendis, eum architecto quod cupiditate nobis in perferendis inventore saepe fugit iure voluptas eveniet commodi autem impedit quidem labore corporis facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestias dolores voluptate, architecto quasi quia provident adipisci voluptatem temporibus nobis similique itaque dolor pariatur ipsa atque ducimus, magnam eos consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusantium doloribus, fugit laboriosam, illo corrupti dicta aliquam totam saepe accusamus voluptatum qui sunt dolor ducimus doloremque! At repudiandae quia nisi.</p>
+            </div>
+        </div>
+        <div class="about-img">
+            <img src="img/profile3.jpg" alt="">
+            <div class="about-text">
+                <span>Amanda Chelsea</span>
+                <h2>Marketing Pemasaran</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi reiciendis, eum architecto quod cupiditate nobis in perferendis inventore saepe fugit iure voluptas eveniet commodi autem impedit quidem labore corporis facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestias dolores voluptate, architecto quasi quia provident adipisci voluptatem temporibus nobis similique itaque dolor pariatur ipsa atque ducimus, magnam eos consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusantium doloribus, fugit laboriosam, illo corrupti dicta aliquam totam saepe accusamus voluptatum qui sunt dolor ducimus doloremque! At repudiandae quia nisi.</p>
+            </div>
+        </div>
+       
+    </section>
+    <div id="sejarah">
+        <div class="judul"><h2>Informasi Kami</h2></div>
+        <div class="imgsejarah">
+            <img src="img/wartegsejarah.jpg" alt="">
+            <div class="about-sejarah">
+                <span>Sejarah WartegXYZ</span>
+                <h2>Mulai berdiri sejak 2021</h2>
+                <p>Warteg atau singkatan dari Warung makanan khas Tegal mudah ditemui disetiap sudut kota. Warteg sendiri melekat dengan konsep sederhana dengan kajian khas rumahan dan harganya yang terbilang murah. kini Anggriawan atau saya pribadi beserta tim yang terbentuk dari sebuah grup mendirikan Warteg dengan konsep Modern, tentunya higienis, tetapi masih dengan harga yang terjangkau. Warteg ini dibuat oleh kerjasama tim yang diketuai oleh Anggriawan Sifa Wahyusesa, beserta rekan rekan yang tergolong handal tentang resep masakan dan marketing penjualan. Warteg ini didirikan pada tahun 2021, dengan konsep modern seperti ini semoga warteg ini menjadi daya tarik tersendiri dengan makanan dengan harga terjangkau dan higienis, yang terpenting adalah kenikmatan dan kenyamanan.</p>
+            </div>
+        </div>
+    </div>
+   <footer id="contact">
+    <div class="row">
+        <div class="footer-col">
+            <h2 class="con">Contact</h2>
+            <div class="all">
+                <div class="social-media">
+                    <h2>Social Media</h2>
+                    <ul>
+                        <li>Instagram</li>
+                        <li class="isi"><a href="">@wartegxyz</a></li>
+                        <li>Facebook</li>
+                        <li class="isi"><a href="">wartegxyz@yahoo.com</a></li>
+                        <li>Grab</li>
+                        <li class="isi"><a href="">WartegXYZ</a></li>
+                        <li>Gojek</li>
+                        <li class="isi"><a href="">WartegXYZ</a></li>
+                    </ul>
+                </div>
+                <div class="contactpersonal">
+                    <h2>Our Contact</h2>
+                    <ul>
+                        <li>Alamat</li>
+                        <li class="isi">Jl. Test RT.006/RW.007 No.13 Babelan.<br>Kota Bekasi Kode Pos.17610</li>
+                        <li>No. Telephone</li>
+                        <li class="isi">(021) 89456788</li>
+                        <li>Email</li>
+                        <li class="isi">wartegxyz@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="Feedback">
+                    <h2>Feedback</h2>
+                    <ul>
+                        <li>Tinggalkan Pesan & Komentar untuk warteg kami!</li>
+                        <br>
+                        <li><textarea name="" id="" cols="45" rows="1" placeholder="Nama"></textarea></li>
+                        <li><textarea name="" id="" cols="45" rows="1" placeholder="Email"></textarea></li>
+                       <li><textarea placeholder="Message" name="" id="" cols="45" rows="5"></textarea></li>
+                       <br>
+                       <li><a href="">Send</a></li>
+                    </ul>
+                </div>
+                <div class="contact-img">
+                    <img src="img/wartegxyz.png" alt="">
+                </div>
+            </div>
+
+   </footer>
+</body>
+</html>
